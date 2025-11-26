@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+</head>
+<body>
+    <div>
+    <h1>Sorteador</h1>
+    <p> Esse é um sorteador, que sorteia aleatoriamente o que você quiser, separe itens com virgula</p>
+    <input type="text" id="inputText" placeholder="Digite o que deseja sortear">
+    <button id="sortButton">Sortear</button>
+    <p id="result"></p>
+    <script>
+        document.getElementById('sortButton').addEventListener('click', function() {
+            const inputText = document.getElementById('inputText').value;
+            const items = inputText.split(',').map(item => item.trim()).filter(item => item);
+            if (items.length > 0) {
+                const randomIndex = Math.floor(Math.random() * items.length);
+                document.getElementById('result').textContent = `Resultado: ${items[randomIndex]}`;
+            } else {
+                document.getElementById('result').textContent = 'Por favor, insira itens válidos para sortear.';
+            }
+        });
+    </script>
+    </div>
+    
+</body>
+</html>
