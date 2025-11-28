@@ -1,0 +1,50 @@
+div#container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* layout interno */
+#inputText {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#sortButton {
+    padding: 10px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#sortButton:hover {
+    background: #0056b3;
+}
+
+#result {
+    margin-top: 16px;
+    font-weight: 600;
+    color: #333;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+body {
+    background-color: #e0f7fa;
+}
